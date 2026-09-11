@@ -1,0 +1,26 @@
+{
+  "status": "RELOCATION_REGENERATION_PASS",
+  "scratch_location_kind": "compute-node temporary directory outside canonical bundle",
+  "outputs_deleted_before_regeneration": true,
+  "canonical_glb_sha256": "f7735dd365cc112e131f75db5912c3a4c11a3e982464ee3d7630bc39a6047b6f",
+  "relocated_glb_sha256": "f7735dd365cc112e131f75db5912c3a4c11a3e982464ee3d7630bc39a6047b6f",
+  "glb_hash_match": true,
+  "regeneration_pass_marker": true,
+  "verification": {
+    "status": "SELF_CONTAINED_PASS",
+    "urdf_visual_references": 13,
+    "unique_internal_visual_meshes": 9,
+    "glb_geometry_count": 33,
+    "glb_external_uri_count": 0,
+    "materials": [
+      "black_plastic",
+      "metal",
+      "recorded_occluder_0_material",
+      "white_plastic"
+    ],
+    "transparent_pixels": 195976,
+    "visible_pixels": 34424,
+    "absolute_json_path_count": 0,
+    "symlink_count": 0
+  }
+}

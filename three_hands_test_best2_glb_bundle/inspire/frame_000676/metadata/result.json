@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "hand": "inspire",
+  "frame_file_index": 676,
+  "metadata_frame": 6769,
+  "camera_id": 1,
+  "background": "none in both GLBs and transparent render previews",
+  "inputs": {
+    "urdf": "assets/inspire/hand_visual.urdf",
+    "metadata": "inspire/frame_000676/source/scene_gt.json",
+    "prediction": "inspire/frame_000676/source/prediction.json",
+    "rgb": "inspire/frame_000676/source/rgb.png",
+    "depth": "inspire/frame_000676/source/depth.png",
+    "sha256": {
+      "urdf": "83e7f9586377aac0d7ae3e85e3b5f4abe9daca8224027a6ec1e83235fa620157",
+      "metadata": "6c6266c9662910900b940c65fa75d8f48a165c7df9d68972706672deba4f7885",
+      "prediction": "2d9ee219fffad7886bfd2fefb4f7bb4ca1df1760319abe4153b7bc867a6cdd02",
+      "rgb": "8700bab7200c5b96a1b02b89885e5b991c7b387d6a1e35515324251f99056eab",
+      "depth": "01be1eb47d09ee040d56f3deee265d5d5e77f5ffc71442373b95bcbafda19a6d"
+    }
+  },
+  "artifacts": {
+    "gt_glb": "inspire/frame_000676/models/gt.glb",
+    "prediction_glb": "inspire/frame_000676/models/prediction.glb",
+    "gt_transparent_preview": "inspire/frame_000676/previews/gt_transparent.png",
+    "prediction_transparent_preview": "inspire/frame_000676/previews/prediction_transparent.png",
+    "prediction_2d_skeleton": "inspire/frame_000676/previews/prediction_2d_skeleton.png",
+    "four_column_preview": "inspire/frame_000676/previews/four_column.png"
+  },
+  "coordinate_system": {
+    "units": "meters",
+    "dataset_world": "right-handed Z-up",
+    "gltf_world": "right-handed Y-up",
+    "mapping": "[x,y,z] -> [x,z,-y]"
+  },
+  "pose_validation": {
+    "keypoint_count": 18,
+    "gt_fk_mean_error_mm": 0.002307179417863665,
+    "gt_fk_max_error_mm": 0.025281913775525154,
+    "report_vs_current_gt_mean_drift_mm": 0.0,
+    "report_vs_current_gt_max_drift_mm": 0.0,
+    "reported_mean_gt_3d_error_mm": 13.74579930441009,
+    "recomputed_mean_gt_3d_error_mm": 13.74579877733622,
+    "metric_delta_mm": 5.270738706597555e-07
+  },
+  "camera_alignment_validation": {
+    "recorded_foreground_pixels": 48648,
+    "render_foreground_pixels": 49143,
+    "intersection_pixels": 48602,
+    "mask_iou": 0.9880664376181667,
+    "mask_precision": 0.9889913110717702,
+    "mask_recall": 0.9990544318368689,
+    "depth_mae_mm_on_intersection": 1.1930923461914062,
+    "depth_median_abs_error_mm_on_intersection": 0.9534358978271484
+  },
+  "prediction_2d_keypoints_drawn": 18,
+  "hand_geometry": {
+    "gt": {
+      "visual_primitive_count": 32,
+      "material_names": [
+        "black_plastic",
+        "metal",
+        "white_plastic"
+      ]
+    },
+    "prediction": {
+      "visual_primitive_count": 32,
+      "material_names": [
+        "black_plastic",
+        "metal",
+        "white_plastic"
+      ]
+    }
+  },
+  "recorded_objects_shared_by_gt_and_prediction": [
+    {
+      "name": "OBJECT__00__recorded_box",
+      "scene_prim": "World/ForegroundOccluders/block_00",
+      "size_xyz_m": [
+        0.05789222334758225,
+        0.025473130575498583,
+        0.06422157432295642
+      ],
+      "position_worldframe_m": [
+        0.1541019607285549,
+        -0.06687774951157575,
+        0.31351600373664035
+      ],
+      "rotation_xyz_degrees": [
+        -2.12633504986751,
+        1.0639685852142087,
+        75.19406133387727
+      ],
+      "diffuse_color": [
+        0.4193936633670104,
+        0.42206807391536066,
+        0.39680655424431577
+      ],
+      "roughness": 0.6419953189388711,
+      "metallic": 0.08308925059408788
+    }
+  ],
+  "glb": {
+    "gt": {
+      "bytes": 2242360,
+      "sha256": "76b8ed00e6dfd6b63e286db3851dcdd9d834ac764ead6e1b3178af4a7681a579",
+      "geometry_count": 33,
+      "scene_extents_m": [
+        0.19998360931326953,
+        0.1506330147399863,
+        0.14416482020214658
+      ],
+      "external_uri_count": 0,
+      "external_uris": []
+    },
+    "prediction": {
+      "bytes": 2242384,
+      "sha256": "a8d5f681540b241e5cbdcb7fb8d8bb5e02c910b8633e2519696c094243244dd9",
+      "geometry_count": 33,
+      "scene_extents_m": [
+        0.19340445627202366,
+        0.14486767139468626,
+        0.14380242995160017
+      ],
+      "external_uri_count": 0,
+      "external_uris": []
+    }
+  },
+  "preview": {
+    "transparent_shape_hwc": [
+      480,
+      480,
+      4
+    ],
+    "gt_nontransparent_pixels": 49143,
+    "prediction_nontransparent_pixels": 49291,
+    "four_column_shape_hwc": [
+      542,
+      1944,
+      3
+    ]
+  }
+}

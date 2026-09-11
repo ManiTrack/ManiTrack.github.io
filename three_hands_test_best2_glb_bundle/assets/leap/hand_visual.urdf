@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="leap_right">
+  <link name="base" />
+  <joint name="base_joint" type="fixed">
+    <parent link="base" />
+    <child link="palm_lower" />
+    <origin xyz="0 0.038 0.098" rpy="0 -1.57079 0" />
+  </joint>
+
+  <link name="palm_lower">
+    <visual>
+      <origin xyz="-0.0200 0.02575 -0.0347" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__palm_lower.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="mcp_joint">
+    <visual>
+      <origin xyz="0.0084 0.0077 0.01465" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__mcp_joint.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="pip">
+    <visual>
+      <origin xyz="0.0096 0.0002 0.0007" rpy="-1.57079 -1.57079 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__pip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="dip">
+    <visual>
+      <origin xyz="0.0211 -0.0084 0.0097" rpy="-3.1415926 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__dip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="fingertip">
+    <visual>
+      <origin xyz="0.0132 -0.0061 0.0144" rpy="3.1415926 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__fingertip.glb" />
+      </geometry>
+    </visual>
+    </link>
+
+  <joint name="0" type="revolute">
+    <origin xyz="-0.0122 0.03810 0.01450" rpy="-1.57079 0 1.57079" />
+    <parent link="mcp_joint" />
+    <child link="pip" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-1.047" upper="1.047" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="1" type="revolute">
+    <origin xyz="-0.0070 0.0230 -0.0187" rpy="1.57079 1.57079 0" />
+    <parent link="palm_lower" />
+    <child link="mcp_joint" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.314" upper="2.23" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="2" type="revolute">
+    <origin xyz="0.015 0.0143 -0.013" rpy="1.57079 -1.57079 0" />
+    <parent link="pip" />
+    <child link="dip" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.506" upper="1.885" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="3" type="revolute">
+    <origin xyz="0 -0.0361 0.0002" rpy="0 0 0" />
+    <parent link="dip" />
+    <child link="fingertip" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.366" upper="2.042" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <link name="mcp_joint_2">
+    <visual>
+      <origin xyz="0.0084 0.0077 0.01465" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__mcp_joint.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="pip_2">
+    <visual>
+      <origin xyz="0.0096 0.0003 0.0007" rpy="-1.57079 -1.57079 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__pip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="dip_2">
+    <visual>
+      <origin xyz="0.0211 -0.0084 0.0097" rpy="-3.14159 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__dip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="fingertip_2">
+    <visual>
+      <origin xyz="0.0132 -0.0061 0.01450" rpy="3.14159 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__fingertip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <joint name="4" type="revolute">
+    <origin xyz="-0.0122 0.0381 0.0145" rpy="-1.57079 0 1.57079" />
+    <parent link="mcp_joint_2" />
+    <child link="pip_2" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-1.047" upper="1.047" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="5" type="revolute">
+    <origin xyz="-0.0071 -0.0224 -0.0187" rpy="1.57079 1.57079 0" />
+    <parent link="palm_lower" />
+    <child link="mcp_joint_2" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.314" upper="2.23" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="6" type="revolute">
+    <origin xyz="0.015 0.0143 -0.013" rpy="1.57079 -1.57079 0" />
+    <parent link="pip_2" />
+    <child link="dip_2" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.506" upper="1.885" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="7" type="revolute">
+    <origin xyz="0 -0.0361 0.0002" rpy="0 0 0" />
+    <parent link="dip_2" />
+    <child link="fingertip_2" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.366" upper="2.042" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <link name="mcp_joint_3">
+    <visual>
+      <origin xyz="0.0084 0.0077 0.01465" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__mcp_joint.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="pip_3">
+    <visual>
+      <origin xyz="0.0096 0.0003 0.0007" rpy="-1.57079 -1.57079 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__pip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="dip_3">
+    <visual>
+      <origin xyz="0.0211 -0.0084 0.0097" rpy="-3.14159 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__dip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="fingertip_3">
+    <visual>
+      <origin xyz="0.0132 -0.0061 0.0145" rpy="3.14159 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__fingertip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <joint name="8" type="revolute">
+    <origin xyz="-0.0122 0.0381 0.0145" rpy="-1.57079 0 1.57079" />
+    <parent link="mcp_joint_3" />
+    <child link="pip_3" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-1.047" upper="1.047" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="9" type="revolute">
+    <origin xyz="-0.00709 -0.0678 -0.0187" rpy="1.57079 1.57079 0" />
+    <parent link="palm_lower" />
+    <child link="mcp_joint_3" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.314" upper="2.23" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="10" type="revolute">
+    <origin xyz="0.015 0.0143 -0.013" rpy="1.57079 -1.57079 0" />
+    <parent link="pip_3" />
+    <child link="dip_3" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.506" upper="1.885" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="11" type="revolute">
+    <origin xyz="0 -0.03609 0.0002" rpy="0 0 0" />
+    <parent link="dip_3" />
+    <child link="fingertip_3" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.366" upper="2.042" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <link name="thumb_temp_base">
+    <visual>
+      <origin xyz="-0.0053 0.0003 0.00078" rpy="-1.57079 -1.57079 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__pip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="thumb_pip">
+    <visual>
+      <origin xyz="0.01196 0 -0.0158" rpy="1.57079 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__thumb_pip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="thumb_dip">
+    <visual>
+      <origin xyz="0.0439 0.0579 -0.0086" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__thumb_dip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <link name="thumb_fingertip">
+    <visual>
+      <origin xyz="0.0625 0.0784 0.0489" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/meshes__visual__thumb_fingertip.glb" />
+      </geometry>
+    </visual>
+    </link>
+  <joint name="12" type="revolute">
+    <origin xyz="-0.0693 -0.0012 -0.0216" rpy="0 1.57079 0" />
+    <parent link="palm_lower" />
+    <child link="thumb_temp_base" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.349" upper="2.094" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="13" type="revolute">
+    <origin xyz="0 0.0143 -0.013" rpy="1.57079 -1.57079 0" />
+    <parent link="thumb_temp_base" />
+    <child link="thumb_pip" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0.47" upper="2.443" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="14" type="revolute">
+    <origin xyz="0 0.0145 -0.017" rpy="-1.57079 0 0" />
+    <parent link="thumb_pip" />
+    <child link="thumb_dip" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-1.20" upper="1.90" />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="15" type="revolute">
+    <origin xyz="0 0.0466 0.0002" rpy="0 0 3.14159" />
+    <parent link="thumb_dip" />
+    <child link="thumb_fingertip" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-1.34" upper="1.88" />
+    <joint_properties friction="0.0" />
+  </joint>
+
+
+
+  
+  <link name="thumb_tip_head">
+    </link>
+
+  <joint name="16" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.06 -0.015" />
+    <parent link="thumb_fingertip" />
+    <child link="thumb_tip_head" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0." upper="0." />
+    <joint_properties friction="0.0" />
+  </joint>
+
+  <link name="index_tip_head">
+    </link>
+  <joint name="17" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.048 0.015" />
+    <parent link="fingertip" />
+    <child link="index_tip_head" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0." upper="0." />
+    <joint_properties friction="0.0" />
+  </joint>
+
+
+  <link name="middle_tip_head">
+    </link>
+  <link name="ring_tip_head">
+    </link>
+  <joint name="middle_tip" type="revolute">
+    <parent link="fingertip_2" />
+    <child link="middle_tip_head" />
+    <origin rpy="0 0 0" xyz="0 -0.048 0.015" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0." upper="0." />
+    <joint_properties friction="0.0" />
+  </joint>
+  <joint name="ring_tip" type="revolute">
+    <parent link="fingertip_3" />
+    <child link="ring_tip_head" />
+    <origin rpy="0 0 0" xyz="0 -0.048 0.015" />
+    <axis xyz="0 0 -1" />
+    <limit effort="0.95" velocity="8.48" lower="-0." upper="0." />
+    <joint_properties friction="0.0" />
+  </joint>
+</robot>

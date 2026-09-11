@@ -1,0 +1,1212 @@
+{
+  "frame": 5029,
+  "cameras": [
+    {
+      "camera_id": 0,
+      "location_worldframe": [
+        -0.47999998927116394,
+        -0.30000001192092896,
+        0.4000000059604645
+      ],
+      "target_worldframe": [
+        0.12232620269060135,
+        0.0207162294536829,
+        0.38416722416877747
+      ],
+      "quaternion_xyzw_worldframe": [
+        0.5991436298512985,
+        -0.3597624919213148,
+        -0.36820651073668254,
+        0.6132061852805246
+      ],
+      "render_resolution_wh": [
+        960,
+        960
+      ],
+      "output_resolution_wh": [
+        480,
+        480
+      ],
+      "focal_length": 42.0,
+      "horizontal_aperture": 20.955,
+      "vertical_aperture": 20.955,
+      "clipping_range": [
+        0.1,
+        100000.0
+      ],
+      "intrinsic_matrix_render": [
+        [
+          1924.123120973515,
+          0.0,
+          480.0
+        ],
+        [
+          0.0,
+          1924.123120973515,
+          480.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsic_matrix_output": [
+        [
+          962.0615604867575,
+          0.0,
+          240.0
+        ],
+        [
+          0.0,
+          962.0615604867575,
+          240.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_matrix": [
+        [
+          4.008589744567871,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.008589744567871,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0000020265579224,
+          -0.20000019669532776
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "view_matrix_world_to_camera": [
+        [
+          0.4699898362159729,
+          -0.8826718330383301,
+          0.0,
+          -0.03920644521713257
+        ],
+        [
+          0.020474210381507874,
+          0.01090175285935402,
+          0.9997310042381287,
+          -0.3867942690849304
+        ],
+        [
+          -0.8824343681335449,
+          -0.4698633849620819,
+          0.023195721209049225,
+          -0.5738058090209961
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "view_projection_matrix": [
+        [
+          1.8839964866638184,
+          -3.538269281387329,
+          0.0,
+          -0.15716254711151123
+        ],
+        [
+          0.08207271248102188,
+          0.043700654059648514,
+          4.007511615753174,
+          -1.5504995584487915
+        ],
+        [
+          0.8824361562728882,
+          0.4698643386363983,
+          -0.023195767775177956,
+          0.37380680441856384
+        ],
+        [
+          0.8824343681335449,
+          0.4698633849620819,
+          -0.023195721209049225,
+          0.5738058090209961
+        ]
+      ]
+    },
+    {
+      "camera_id": 1,
+      "location_worldframe": [
+        0.47999998927116394,
+        -0.30000001192092896,
+        0.4000000059604645
+      ],
+      "target_worldframe": [
+        0.12232620269060135,
+        0.0207162294536829,
+        0.38416722416877747
+      ],
+      "quaternion_xyzw_worldframe": [
+        0.6349538488612558,
+        0.2834854333268558,
+        0.29298221229938576,
+        0.656224841181679
+      ],
+      "render_resolution_wh": [
+        960,
+        960
+      ],
+      "output_resolution_wh": [
+        480,
+        480
+      ],
+      "focal_length": 42.0,
+      "horizontal_aperture": 20.955,
+      "vertical_aperture": 20.955,
+      "clipping_range": [
+        0.1,
+        100000.0
+      ],
+      "intrinsic_matrix_render": [
+        [
+          1924.123120973515,
+          0.0,
+          480.0
+        ],
+        [
+          0.0,
+          1924.123120973515,
+          480.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsic_matrix_output": [
+        [
+          962.0615604867575,
+          0.0,
+          240.0
+        ],
+        [
+          0.0,
+          962.0615604867575,
+          240.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_matrix": [
+        [
+          4.008589744567871,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.008589744567871,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0000020265579224,
+          -0.20000019669532776
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "view_matrix_world_to_camera": [
+        [
+          0.667594850063324,
+          0.7445247173309326,
+          -0.0,
+          -0.09708808362483978
+        ],
+        [
+          -0.024524077773094177,
+          0.021990066394209862,
+          0.9994573593139648,
+          -0.38141438364982605
+        ],
+        [
+          0.744120717048645,
+          -0.6672325730323792,
+          0.03293923661112785,
+          -0.5705234408378601
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "view_projection_matrix": [
+        [
+          2.6761138439178467,
+          2.984494209289551,
+          0.0,
+          -0.389186292886734
+        ],
+        [
+          -0.09830696880817413,
+          0.08814915269613266,
+          4.006414413452148,
+          -1.5289337635040283
+        ],
+        [
+          -0.7441222071647644,
+          0.667233943939209,
+          -0.032939303666353226,
+          0.3705243766307831
+        ],
+        [
+          -0.744120717048645,
+          0.6672325730323792,
+          -0.03293923661112785,
+          0.5705234408378601
+        ]
+      ]
+    }
+  ],
+  "hand": {
+    "name": "xhand",
+    "keypoint_names": [
+      "right_hand_link",
+      "right_hand_index_bend_link",
+      "right_hand_mid_link1",
+      "right_hand_pinky_link1",
+      "right_hand_ring_link1",
+      "right_hand_thumb_bend_link",
+      "right_hand_index_rota_link1",
+      "right_hand_mid_link2",
+      "right_hand_pinky_link2",
+      "right_hand_ring_link2",
+      "right_hand_thumb_rota_link1",
+      "right_hand_index_rota_link2",
+      "right_hand_mid_tip",
+      "right_hand_pinky_tip",
+      "right_hand_ring_tip",
+      "right_hand_thumb_rota_link2",
+      "right_hand_index_rota_tip",
+      "right_hand_thumb_rota_tip"
+    ],
+    "base_body_name": "right_hand_link",
+    "base_pose_worldframe": {
+      "position": [
+        0.036507416516542435,
+        0.011583581566810608,
+        0.41645577549934387
+      ],
+      "quaternion_wxyz": [
+        0.3567764461040497,
+        -0.8342039585113525,
+        0.1606285721063614,
+        -0.38860392570495605
+      ],
+      "quaternion_xyzw": [
+        -0.8342039585113525,
+        0.1606285721063614,
+        -0.38860392570495605,
+        0.3567764461040497
+      ],
+      "euler_xyz": [
+        -2.1227159390051904,
+        -0.5630085072831248,
+        -0.7007710764204929
+      ],
+      "rotation_matrix": [
+        [
+          0.6463709814695136,
+          0.009295471605800854,
+          0.7629666758920493
+        ],
+        [
+          -0.5452833132016515,
+          -0.6938181278971085,
+          0.4704067535071974
+        ],
+        [
+          0.5337327633357047,
+          -0.720090271847202,
+          -0.4433952387352115
+        ]
+      ]
+    },
+    "articulation_root_pose_worldframe": {
+      "position": [
+        0.036507416516542435,
+        0.011583581566810608,
+        0.41645577549934387
+      ],
+      "quaternion_wxyz": [
+        0.3567764461040497,
+        -0.8342039585113525,
+        0.1606285721063614,
+        -0.38860392570495605
+      ],
+      "quaternion_xyzw": [
+        -0.8342039585113525,
+        0.1606285721063614,
+        -0.38860392570495605,
+        0.3567764461040497
+      ],
+      "euler_xyz": [
+        -2.1227159390051904,
+        -0.5630085072831248,
+        -0.7007710764204929
+      ],
+      "rotation_matrix": [
+        [
+          0.6463709814695136,
+          0.009295471605800854,
+          0.7629666758920493
+        ],
+        [
+          -0.5452833132016515,
+          -0.6938181278971085,
+          0.4704067535071974
+        ],
+        [
+          0.5337327633357047,
+          -0.720090271847202,
+          -0.4433952387352115
+        ]
+      ]
+    },
+    "joint_state": {
+      "names": [
+        "right_hand_index_bend_joint",
+        "right_hand_mid_joint1",
+        "right_hand_pinky_joint1",
+        "right_hand_ring_joint1",
+        "right_hand_thumb_bend_joint",
+        "right_hand_index_joint1",
+        "right_hand_mid_joint2",
+        "right_hand_pinky_joint2",
+        "right_hand_ring_joint2",
+        "right_hand_thumb_rota_joint1",
+        "right_hand_index_joint2",
+        "right_hand_mid_joint3",
+        "right_hand_pinky_joint3",
+        "right_hand_ring_joint3",
+        "right_hand_thumb_rota_joint2",
+        "right_hand_index_rota_joint3",
+        "right_hand_thumb_rota_joint3"
+      ],
+      "positions": [
+        0.09855549782514572,
+        1.0839414596557617,
+        0.4549988806247711,
+        0.6955492496490479,
+        0.8799561262130737,
+        1.313015341758728,
+        1.1005116701126099,
+        0.7860638499259949,
+        0.9925435781478882,
+        0.5319254398345947,
+        1.1407703161239624,
+        0.0,
+        0.0,
+        0.0,
+        0.4269601106643677,
+        0.0,
+        0.0
+      ],
+      "velocities": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_targets": [
+        0.09855549782514572,
+        1.0839414596557617,
+        0.4549988806247711,
+        0.6955492496490479,
+        0.8799561262130737,
+        1.313015341758728,
+        1.1005116701126099,
+        0.7860638499259949,
+        0.9925435781478882,
+        0.5319254398345947,
+        1.1407703161239624,
+        0.0,
+        0.0,
+        0.0,
+        0.4269601106643677,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "links": {
+    "right_hand_link": {
+      "location_worldframe": [
+        0.036507416516542435,
+        0.011583581566810608,
+        0.41645577549934387
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            188.40768432617188,
+            191.364501953125
+          ],
+          "visibility": 2
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            125.2554702758789,
+            178.816162109375
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_index_bend_link": {
+      "location_worldframe": [
+        0.10954587906599045,
+        0.031942643225193024,
+        0.36098143458366394
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            217.38613891601562,
+            273.1322937011719
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            239.6646728515625,
+            283.64703369140625
+          ],
+          "visibility": 2
+        }
+      ]
+    },
+    "right_hand_mid_link1": {
+      "location_worldframe": [
+        0.12329903244972229,
+        0.05616198852658272,
+        0.36906933784484863
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            197.65481567382812,
+            260.1734619140625
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            291.6055603027344,
+            267.3568115234375
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_pinky_link1": {
+      "location_worldframe": [
+        0.11834938824176788,
+        0.08109227567911148,
+        0.4005332887172699
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            164.9440155029297,
+            216.95248413085938
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            317.74957275390625,
+            207.31240844726562
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_ring_link1": {
+      "location_worldframe": [
+        0.12082421779632568,
+        0.06862712651491165,
+        0.38480132818222046
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            181.22254943847656,
+            238.46139526367188
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            304.9228820800781,
+            236.7711944580078
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_thumb_bend_link": {
+      "location_worldframe": [
+        0.0661303922533989,
+        0.004931749776005745,
+        0.3915846347808838
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            220.8033447265625,
+            230.6273193359375
+          ],
+          "visibility": 2
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            147.37112426757812,
+            224.12362670898438
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_index_rota_link1": {
+      "location_worldframe": [
+        0.12307706475257874,
+        0.039060063660144806,
+        0.35186609625816345
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            217.99928283691406,
+            284.556640625
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            267.6069030761719,
+            302.1965637207031
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_mid_link2": {
+      "location_worldframe": [
+        0.17509377002716064,
+        0.04155094176530838,
+        0.3838159143924713
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            248.34555053710938,
+            238.75494384765625
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            347.2102966308594,
+            242.5082244873047
+          ],
+          "visibility": 2
+        }
+      ]
+    },
+    "right_hand_pinky_link2": {
+      "location_worldframe": [
+        0.17244184017181396,
+        0.09129907190799713,
+        0.3913971483707428
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            190.93719482421875,
+            228.5742645263672
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            408.7868957519531,
+            225.1852569580078
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_ring_link2": {
+      "location_worldframe": [
+        0.17662031948566437,
+        0.06928058713674545,
+        0.38489195704460144
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            217.84303283691406,
+            236.978759765625
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            387.376953125,
+            239.06216430664062
+          ],
+          "visibility": 2
+        }
+      ]
+    },
+    "right_hand_thumb_rota_link1": {
+      "location_worldframe": [
+        0.08255484700202942,
+        -0.019010018557310104,
+        0.3984609842300415
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            265.06353759765625,
+            220.03480529785156
+          ],
+          "visibility": 2
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            128.26663208007812,
+            211.35861206054688
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_index_rota_link2": {
+      "location_worldframe": [
+        0.16876667737960815,
+        0.01532673928886652,
+        0.37337949872016907
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            275.4584045410156,
+            253.19537353515625
+          ],
+          "visibility": 2
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            298.63330078125,
+            266.1535339355469
+          ],
+          "visibility": 2
+        }
+      ]
+    },
+    "right_hand_mid_tip": {
+      "location_worldframe": [
+        0.17885708808898926,
+        0.011272486299276352,
+        0.4130382537841797
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            286.1680908203125,
+            200.42807006835938
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            308.4912414550781,
+            179.197509765625
+          ],
+          "visibility": 2
+        }
+      ]
+    },
+    "right_hand_pinky_tip": {
+      "location_worldframe": [
+        0.20871587097644806,
+        0.07593782246112823,
+        0.40666618943214417
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            230.01385498046875,
+            209.49827575683594
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            450.0378723144531,
+            194.1121368408203
+          ],
+          "visibility": 2
+        }
+      ]
+    },
+    "right_hand_ring_tip": {
+      "location_worldframe": [
+        0.19996847212314606,
+        0.044075801968574524,
+        0.4094785749912262
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            260.0532531738281,
+            205.69967651367188
+          ],
+          "visibility": 2
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            392.17645263671875,
+            187.44544982910156
+          ],
+          "visibility": 2
+        }
+      ]
+    },
+    "right_hand_thumb_rota_link2": {
+      "location_worldframe": [
+        0.13080106675624847,
+        -0.04535418376326561,
+        0.3924295902252197
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            330.978271484375,
+            228.73623657226562
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            142.6015167236328,
+            225.23997497558594
+          ],
+          "visibility": 1
+        }
+      ]
+    },
+    "right_hand_index_rota_tip": {
+      "location_worldframe": [
+        0.16128875315189362,
+        -0.012350720353424549,
+        0.40441107749938965
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            305.1933898925781,
+            211.62237548828125
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            243.1221466064453,
+            198.39443969726562
+          ],
+          "visibility": 2
+        }
+      ]
+    },
+    "right_hand_thumb_rota_tip": {
+      "location_worldframe": [
+        0.18019253015518188,
+        -0.04894858971238136,
+        0.38404029607772827
+      ],
+      "projections": [
+        {
+          "camera_id": 0,
+          "projected_location": [
+            361.7324523925781,
+            239.59042358398438
+          ],
+          "visibility": 1
+        },
+        {
+          "camera_id": 1,
+          "projected_location": [
+            207.44351196289062,
+            247.57081604003906
+          ],
+          "visibility": 2
+        }
+      ]
+    }
+  },
+  "domain_randomization": {
+    "recipe": {
+      "name": "dream_light_material",
+      "path": "dream_light_material.yaml"
+    },
+    "pipeline": {
+      "name": "light_material_only",
+      "background_randomization": false,
+      "external_occluders": true,
+      "distractors": false
+    },
+    "lighting": {
+      "enabled": true,
+      "profile": "soft_ceiling_lab",
+      "lights": [
+        {
+          "scene_prim": "World/RealLabLights/TopSoftbox",
+          "type": "RectLight",
+          "position": [
+            0.1173068955540657,
+            -0.04428322002291679,
+            1.4647779056641983
+          ],
+          "intensity": 1379.0453596846437,
+          "color_temperature_k": 5782.103909733798,
+          "color_rgb": [
+            1.0,
+            0.9508571060423902,
+            0.9045795309381978
+          ],
+          "width": 0.8826347457582966,
+          "height": 0.8826347457582966
+        },
+        {
+          "scene_prim": "World/RealLabLights/SoftFill",
+          "type": "RectLight",
+          "position": [
+            -0.8386100567712628,
+            0.17365097727168097,
+            0.6186508063133923
+          ],
+          "intensity": 201.26653261550615,
+          "color_temperature_k": 5915.527281084567,
+          "color_rgb": [
+            1.0,
+            0.9597560456108186,
+            0.9195277287634442
+          ],
+          "width": 0.750347897478543,
+          "height": 0.750347897478543
+        }
+      ],
+      "dome": {
+        "enabled": true,
+        "scene_prim": "World/RealLabLights/Dome",
+        "intensity": 1476.532109859429,
+        "color_temperature_k": 5346.497291065403,
+        "color_rgb": [
+          1.0,
+          0.9203035840520025,
+          0.8526976887136586
+        ]
+      }
+    },
+    "hand_material": {
+      "enabled": false
+    },
+    "scene": {
+      "enabled": true,
+      "type": "foreground_occluder_blocks",
+      "occluders": {
+        "enabled": true,
+        "probability": 0.65,
+        "count": 2,
+        "objects": [
+          {
+            "scene_prim": "World/ForegroundOccluders/block_00",
+            "camera_id_hint": 0,
+            "position_worldframe": [
+              0.07443152269118207,
+              -0.1253155254444632,
+              0.34458075222342843
+            ],
+            "size_xyz": [
+              0.042216444907482054,
+              0.01819497079999735,
+              0.03384226266628451
+            ],
+            "rotation_xyz_degrees": [
+              20.196283128238527,
+              11.016933395185035,
+              110.11224207233607
+            ],
+            "diffuse_color": [
+              0.30340710798606163,
+              0.16903357497291432,
+              0.6882476705410632
+            ],
+            "roughness": 0.8189551620416327,
+            "metallic": 0.04759911915535828,
+            "ray_fraction_camera_to_target": 0.848215217469718,
+            "lateral_offset_m": 0.10465031978473896,
+            "vertical_offset_m": -0.021121473824418258,
+            "offset_radius_m": 0.10676050808966633,
+            "center_keepout_radius_m": 0.055,
+            "center_keepout_applied": false
+          },
+          {
+            "scene_prim": "World/ForegroundOccluders/block_01",
+            "camera_id_hint": 1,
+            "position_worldframe": [
+              0.12160870668606184,
+              -0.12286337058353888,
+              0.36893473184798437
+            ],
+            "size_xyz": [
+              0.019539885812031376,
+              0.018371939220885564,
+              0.03871710246023205
+            ],
+            "rotation_xyz_degrees": [
+              -23.266872459520815,
+              14.82763147637268,
+              -54.627655209266834
+            ],
+            "diffuse_color": [
+              0.1987429698504798,
+              0.4030349735996329,
+              0.46697365875827057
+            ],
+            "roughness": 0.7755926349846525,
+            "metallic": 0.07900536052833386,
+            "ray_fraction_camera_to_target": 0.803774687570557,
+            "lateral_offset_m": -0.10170158310425706,
+            "vertical_offset_m": 0.0014765761506532887,
+            "offset_radius_m": 0.10171230153251269,
+            "center_keepout_radius_m": 0.055,
+            "center_keepout_applied": false
+          }
+        ]
+      }
+    },
+    "camera": {
+      "enabled": true,
+      "focal_length": 42.0,
+      "horizontal_aperture": 20.955,
+      "mode": "anchored",
+      "track_focus": true,
+      "positions": [
+        [
+          -0.48,
+          -0.3,
+          0.4
+        ],
+        [
+          0.48,
+          -0.3,
+          0.4
+        ]
+      ],
+      "targets": [
+        [
+          0.1173068955540657,
+          0.015716779977083206,
+          0.35952019691467285
+        ],
+        [
+          0.1173068955540657,
+          0.015716779977083206,
+          0.35952019691467285
+        ]
+      ]
+    },
+    "camera_tracking": {
+      "targets": [
+        [
+          0.12232620269060135,
+          0.0207162294536829,
+          0.38416722416877747
+        ],
+        [
+          0.12232620269060135,
+          0.0207162294536829,
+          0.38416722416877747
+        ]
+      ]
+    },
+    "postprocess": {
+      "camera_0": {
+        "rgb": {
+          "enabled": true,
+          "brightness": 7.881010055426838,
+          "contrast": 0.883818473163333,
+          "gamma": 1.3075610774459856,
+          "white_balance": [
+            0.9514925001901554,
+            0.9228556065980078,
+            0.9568013393119283
+          ],
+          "gaussian_noise_std": 1.864147841897047,
+          "blur_applied": false,
+          "blur_kernel": 0,
+          "jpeg_quality": 83
+        },
+        "depth": {
+          "enabled": true,
+          "gaussian_noise_std_m": 0.001379704898686859,
+          "hole_probability": 0.0017232135917999152,
+          "quantization_mm": 1.9169266699998104
+        },
+        "image_background": {
+          "enabled": true,
+          "source_path": "ILSVRC2012_val_00002279.JPEG",
+          "depth_threshold": 2.0,
+          "mask_fraction": 0.886240234375,
+          "source_size_wh": [
+            429,
+            500
+          ],
+          "crop_xywh": [
+            0,
+            59,
+            429,
+            429
+          ],
+          "flipped_horizontal": true
+        }
+      },
+      "camera_1": {
+        "rgb": {
+          "enabled": true,
+          "brightness": 8.55837504521233,
+          "contrast": 1.079276110500509,
+          "gamma": 0.9196314152950055,
+          "white_balance": [
+            0.9588984524558238,
+            0.9124803869389054,
+            1.0097539927618744
+          ],
+          "gaussian_noise_std": 0.38063016459042187,
+          "blur_applied": false,
+          "blur_kernel": 0,
+          "jpeg_quality": 96
+        },
+        "depth": {
+          "enabled": true,
+          "gaussian_noise_std_m": 0.0011826835573007274,
+          "hole_probability": 0.0028556070527478244,
+          "quantization_mm": 1.2926032072280127
+        },
+        "image_background": {
+          "enabled": true,
+          "source_path": "ILSVRC2012_val_00003637.JPEG",
+          "depth_threshold": 2.0,
+          "mask_fraction": 0.8108734809027778,
+          "source_size_wh": [
+            500,
+            375
+          ],
+          "crop_xywh": [
+            12,
+            0,
+            375,
+            375
+          ],
+          "flipped_horizontal": false
+        }
+      }
+    },
+    "image_background": {
+      "enabled": true,
+      "method": "depth_threshold_rgb_composite",
+      "per_camera": true,
+      "background_dirs": [
+        "textures_small",
+        "ILSVRC2012_img_val"
+      ]
+    }
+  }
+}

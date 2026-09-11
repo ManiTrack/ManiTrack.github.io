@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ManiTrack is a real-time visibility-aware, URDF-constrained framework for 3D state tracking of dexterous robotic hands.">
+  <meta name="keywords" content="ManiTrack, robotic hand tracking, 3D pose estimation, URDF, visibility-aware tracking">
+  <meta property="og:title" content="ManiTrack: Real-Time 3D Robotic Hand Tracking">
+  <meta property="og:description" content="Real-time visibility-aware, URDF-constrained 3D state tracking for dexterous robotic hands.">
+  <meta property="og:type" content="website">
+  <title>ManiTrack | Real-Time 3D Robotic Hand Tracking</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css?v=20260903-2">
+
+  <!-- MathJax: supports $...$, \(...\), $$...$$, and \[...\]. -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: [
+          'script', 'noscript', 'style', 'textarea', 'pre', 'code',
+          'math', 'select', 'option', 'mjx-container'
+        ]
+      }
+    };
+  </script>
+  <script
+    id="MathJax-script"
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-chtml.js"></script>
+  <script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script defer src="./static/js/index.js?v=20260825-4"></script>
+</head>
+<body>
+  <header class="collapsed-project-header" data-collapsed-header aria-hidden="true">
+    <a
+      class="collapsed-project-title"
+      data-collapsed-title
+      href="#project-cover"
+      tabindex="-1">
+      ManiTrack: Real-Time Visibility-Aware URDF-Constrained 3D State Tracking for Dexterous Robotic Hands
+    </a>
+  </header>
+
+  <main>
+    <!-- Full-screen project cover. Replace the background image when a dedicated asset is ready. -->
+    <section id="project-cover" class="hero publication-header hero-cover" data-hero>
+      <div class="hero-sticky" data-hero-sticky>
+        <div class="hero-background" aria-hidden="true">
+          <img
+            class="hero-background-media"
+            data-hero-media
+            src="./static/images/pipeline.png"
+            decoding="async"
+            fetchpriority="high"
+            alt="">
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-body" data-hero-content>
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+              <!-- <p class="publication-venue">[Conference or Journal, Year]</p> -->
+              <h1 class="title is-1 publication-title">ManiTrack: Real-Time Visibility-Aware URDF-Constrained 3D State Tracking for Dexterous Robotic Hands</h1>
+              <!-- <p class="subtitle is-4 publication-subtitle">[One-sentence project tagline]</p> -->
+
+              <!-- <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://ferryrain.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Youyou Zhang
+                  </a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://ferryrain.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Feiyu Zhao
+                  </a><sup>1</sup>,
+                </span>
+                <span class="author-block"><a href="#">Chenxi Xiao</a><sup>1</sup></span>
+              </div> -->
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><a href="#">Anonymous Authors</a></span>
+              </div>
+
+              <!-- <div class="is-size-5 publication-affiliations">
+                <span class="author-block"><sup>1</sup>ShanghaiTech University</span>
+              </div> -->
+
+              <!-- Replace each # with the final URL. Remove buttons you do not need. -->
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper(Coming Soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv(Coming Soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-youtube"></i></span>
+                    <span>Video(Coming Soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code(Coming Soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="far fa-images"></i></span>
+                    <span>Data(Coming Soon)</span>
+                  </a>
+                </span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaser: replace this placeholder with an img or video element. -->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <div class="media-placeholder media-placeholder-large">
+            <strong>Teaser image or video</strong>
+            <span>Add media under <code>static/images</code> or <code>static/videos</code>.</span>
+          </div>
+          <h2 class="subtitle has-text-centered teaser-caption">
+            [A short caption explaining the main idea or result.]
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Abstract. -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>As robots are increasingly deployed in human-centered environments, ranging from collaborative manufacturing to security surveillance, 
+                the ability to perceive and interpret motions of other robots is becoming essential. In particular, accurate perception of robotic hand 
+                poses and motions is critical for multi-robot interaction and coordination. While human hand pose estimation has reached a relatively 
+                mature stage, vision-based 3D pose estimation for robotic hands remains largely underexplored, limiting both the understanding of robot 
+                behavior and cross-platform skill transfer among heterogeneous robotic systems. We identify three key challenges underlying this problem: 
+                (1) the structural diversity of robotic end effectors; (2) the scarcity of annotated 3D pose data for robotic hands; and (3) severe 
+                occlusions and weak visual textures inherent to mechanical structures. To address these challenges, we propose $\textbf{ManiTrack}$, a 
+                unified RGB-D estimation pipeline for real-time 3D robotic hand pose estimation. ManiTrack incorporates hand-specific kinematic priors 
+                to recover kinematically consistent hand states from unreliable visual observations. Extensive experiments show that the online variant 
+                of ManiTrack achieves an average AUC@50 of $\textbf{79.89\%}$ across three dexterous hands on a synthetic dataset at $\textbf{19.73 FPS}$, 
+                while generalizing to real-world observations without fine-tuning. Finally, we demonstrate its practical utility through a robot motion 
+                imitation task.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Method overview. -->
+    <section class="section section-alt">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Method Overview</h2>
+            <div class="media-placeholder">
+              <figure class="publication-figure">
+                <img
+                  src="./static/images/pipeline.png"
+                  width="2400"
+                  height="1024"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Overview of the ManiTrack pipeline.">
+                <figcaption class="figure-caption">
+                  <p><strong>System Overview.</strong> The proposed framework consists of three components: synthetic RGB-D data generation with 
+                  geometry-consistent annotations, visibility-aware single-frame keypoint estimation, and URDF-guided kinematic completion for 
+                  physically consistent 3D hand pose estimation.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results. Duplicate or remove result cards as needed. -->
+    <section class="section">
+      <div class="container is-fluid">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Results</h2>
+            <div class="result-comparison-scroll">
+              <div class="result-comparison-grid">
+                <h3 class="result-hand-heading">Inspire Hand</h3>
+                <p class="result-column-caption">RGB</p>
+                <p class="result-column-caption">GT 3D</p>
+                <p class="result-column-caption">Predicted 3D</p>
+                <p class="result-column-caption">Predicted 2D</p>
+                <!-- Inspire 105 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000105/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="Inspire hand RGB input at frame 105.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000105/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/inspire/frame_000105/previews/gt_transparent.png"
+                    camera-target="-0.067875266m 0.379262954m -0.076351695m"
+                    camera-orbit="55.513677deg 88.213051deg 0.665009720m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive Inspire hand ground-truth 3D model at frame 105.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000105/models/prediction_hand_only.glb"
+                    camera-target="-0.067875266m 0.379262954m -0.076351695m"
+                    camera-orbit="55.513677deg 88.213051deg 0.665009720m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive Inspire hand-only 3D prediction at frame 105.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000105/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="Inspire hand predicted 2D keypoints and skeleton at frame 105.">
+                </div>
+                <!-- Inspire 327 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000327/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="Inspire hand RGB input at frame 327.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000327/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/inspire/frame_000327/previews/gt_transparent.png"
+                    camera-target="0.126171947m 0.354141355m 0.063754275m"
+                    camera-orbit="56.269551deg 83.847899deg 0.427912781m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive Inspire hand ground-truth 3D model at frame 327.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000327/models/prediction_hand_only.glb"
+                    camera-target="0.126171947m 0.354141355m 0.063754275m"
+                    camera-orbit="56.269551deg 83.847899deg 0.427912781m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive Inspire hand-only 3D prediction at frame 327.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000327/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="Inspire hand predicted 2D keypoints and skeleton at frame 327.">
+                </div>
+                <!-- Inspire 676 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000676/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="Inspire hand RGB input at frame 676.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000676/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/inspire/frame_000676/previews/gt_transparent.png"
+                    camera-target="0.102728471m 0.351770282m 0.037230663m"
+                    camera-orbit="55.142816deg 84.011495deg 0.462285232m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive Inspire hand ground-truth 3D model at frame 676.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000676/models/prediction_hand_only.glb"
+                    camera-target="0.102728471m 0.351770282m 0.037230663m"
+                    camera-orbit="55.142816deg 84.011495deg 0.462285232m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive Inspire hand-only 3D prediction at frame 676.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/inspire/frame_000676/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="Inspire hand predicted 2D keypoints and skeleton at frame 676.">
+                </div>
+
+                <h3 class="result-hand-heading">XHand</h3>
+                <!-- Xhand 502 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000502/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="XHand RGB input at frame 502.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000502/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/xhand/frame_000502/previews/gt_transparent.png"
+                    camera-target="0.122326203m 0.384167224m -0.020716229m"
+                    camera-orbit="48.118295deg 88.112379deg 0.480666331m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive XHand ground-truth 3D model at frame 502.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000502/models/prediction_hand_only.glb"
+                    camera-target="0.122326203m 0.384167224m -0.020716229m"
+                    camera-orbit="48.118295deg 88.112379deg 0.480666331m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive XHand hand-only 3D prediction at frame 502.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000502/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="XHand predicted 2D keypoints and skeleton at frame 502.">
+                </div>
+                <!-- Xhand 89 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000089/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="XHand RGB input at frame 89.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000089/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/xhand/frame_000089/previews/gt_transparent.png"
+                    camera-target="0.048369087m 0.320034534m -0.005619789m"
+                    camera-orbit="54.699285deg 81.402049deg 0.534886132m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive XHand ground-truth 3D model at frame 89.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000089/models/prediction_hand_only.glb"
+                    camera-target="0.048369087m 0.320034534m -0.005619789m"
+                    camera-orbit="54.699285deg 81.402049deg 0.534886132m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive XHand hand-only 3D prediction at frame 89.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000089/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="XHand predicted 2D keypoints and skeleton at frame 89.">
+                </div>
+                <!-- Xhand 702 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000702/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="XHand RGB input at frame 702.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000702/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/xhand/frame_000702/previews/gt_transparent.png"
+                    camera-target="0.092751287m 0.420083761m -0.090686455m"
+                    camera-orbit="44.746806deg 92.090942deg 0.550455112m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive XHand ground-truth 3D model at frame 702.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000702/models/prediction_hand_only.glb"
+                    camera-target="0.092751287m 0.420083761m -0.090686455m"
+                    camera-orbit="44.746806deg 92.090942deg 0.550455112m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive XHand hand-only 3D prediction at frame 702.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/xhand/frame_000702/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="XHand predicted 2D keypoints and skeleton at frame 702.">
+                </div>
+
+                <h3 class="result-hand-heading">LEAP Hand</h3>
+                <!-- LEAP 966 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000966/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="LEAP hand RGB input at frame 966.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000966/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/leap/frame_000966/previews/gt_transparent.png"
+                    camera-target="0.122940019m 0.412056923m 0.068876512m"
+                    camera-orbit="57.085178deg 91.623721deg 0.425505892m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive LEAP hand ground-truth 3D model at frame 966.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000966/models/prediction_hand_only.glb"
+                    camera-target="0.122940019m 0.412056923m 0.068876512m"
+                    camera-orbit="57.085178deg 91.623721deg 0.425505892m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive LEAP hand-only 3D prediction at frame 966.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000966/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="LEAP hand predicted 2D keypoints and skeleton at frame 966.">
+                </div>
+                <!-- LEAP 335 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000335/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="LEAP hand RGB input at frame 335.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000335/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/leap/frame_000335/previews/gt_transparent.png"
+                    camera-target="0.030508807m 0.386748105m 0.095972084m"
+                    camera-orbit="65.586292deg 88.462215deg 0.493806978m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive LEAP hand ground-truth 3D model at frame 335.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000335/models/prediction_hand_only.glb"
+                    camera-target="0.030508807m 0.386748105m 0.095972084m"
+                    camera-orbit="65.586292deg 88.462215deg 0.493806978m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive LEAP hand-only 3D prediction at frame 335.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000335/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="LEAP hand predicted 2D keypoints and skeleton at frame 335.">
+                </div>
+                <!-- LEAP 834 -->
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000834/source/rgb.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="LEAP hand RGB input at frame 834.">
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000834/models/gt.glb"
+                    poster="./three_hands_test_best2_glb_bundle/leap/frame_000834/previews/gt_transparent.png"
+                    camera-target="0.118973285m 0.347173423m 0.009205971m"
+                    camera-orbit="51.149804deg 83.498911deg 0.466574864m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive LEAP hand ground-truth 3D model at frame 834.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <model-viewer class="result-media result-media-model"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000834/models/prediction_hand_only.glb"
+                    camera-target="0.118973285m 0.347173423m 0.009205971m"
+                    camera-orbit="51.149804deg 83.498911deg 0.466574864m"
+                    field-of-view="28.014702deg"
+                    camera-controls touch-action="pan-y" loading="lazy"
+                    alt="Interactive LEAP hand-only 3D prediction at frame 834.">
+                  </model-viewer>
+                </div>
+                <div class="result-card">
+                  <img class="result-media result-media-image"
+                    src="./three_hands_test_best2_glb_bundle/leap/frame_000834/previews/prediction_2d_skeleton.png"
+                    width="480" height="480" loading="lazy" decoding="async"
+                    alt="LEAP hand predicted 2D keypoints and skeleton at frame 834.">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video: replace the placeholder with a YouTube iframe or local video. -->
+    <section class="section section-alt">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video</h2>
+            <div class="media-placeholder">
+              <strong>Project video</strong>
+              <span>Embed a YouTube video or add an MP4 file here.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Citation. -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title is-3">BibTeX</h2>
+        <pre><code>@inproceedings{project-key,
+  author    = {[Author names]},
+  title     = {[Project title]},
+  booktitle = {[Conference or journal]},
+  year      = {[Year]}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>[Optional project acknowledgement or contact information.]</p>
+            <p class="template-credit">
+              Website template adapted from
+              <a href="https://nerfies.github.io/">Nerfies</a>, shared under
+              <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                CC BY-SA 4.0
+              </a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
