@@ -18,7 +18,7 @@
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <link rel="stylesheet" href="./static/css/index.css?v=20260903-2">
+  <link rel="stylesheet" href="./static/css/index.css?v=20260916-1">
 
   <!-- MathJax: supports $...$, \(...\), $$...$$, and \[...\]. -->
   <script>
@@ -221,24 +221,24 @@
             <h2 class="title is-3">Simulation Results</h2>
             <div class="result-overview-video-grid result-overview-video-grid-three">
               <figure class="result-video-card">
-                <figcaption class="result-video-label">[Simulation video 1]</figcaption>
+                <figcaption class="result-video-label">Inspire Hand</figcaption>
                 <video class="result-video" controls muted loop playsinline preload="metadata"
-                  aria-label="Simulation result video 1">
-                  <!-- <source src="./static/videos/simulation-result-1.mp4" type="video/mp4"> -->
+                  aria-label="Inspire Hand simulation result video">
+                  <source src="./static/videos/inspire/inspire_sim_prediction_white_skeleton_15fps_upright_h264.mp4" type="video/mp4">
                 </video>
               </figure>
               <figure class="result-video-card">
-                <figcaption class="result-video-label">[Simulation video 2]</figcaption>
+                <figcaption class="result-video-label">XHand</figcaption>
                 <video class="result-video" controls muted loop playsinline preload="metadata"
-                  aria-label="Simulation result video 2">
-                  <!-- <source src="./static/videos/simulation-result-2.mp4" type="video/mp4"> -->
+                  aria-label="XHand simulation result video">
+                  <source src="./static/videos/xhand/xhand_sim_prediction_white_skeleton_15fps_upright_h264.mp4" type="video/mp4">
                 </video>
               </figure>
               <figure class="result-video-card">
-                <figcaption class="result-video-label">[Simulation video 3]</figcaption>
+                <figcaption class="result-video-label">LEAP Hand</figcaption>
                 <video class="result-video" controls muted loop playsinline preload="metadata"
-                  aria-label="Simulation result video 3">
-                  <!-- <source src="./static/videos/simulation-result-3.mp4" type="video/mp4"> -->
+                  aria-label="LEAP Hand simulation result video">
+                  <source src="./static/videos/leap/leaphand_sim_prediction_white_skeleton_15fps_h264.mp4" type="video/mp4">
                 </video>
               </figure>
             </div>
@@ -252,14 +252,14 @@
                 <!-- Inspire 105 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/inspire/105/rgb.png"
+                    src="./static/results/inspire_sim/105/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="Inspire hand RGB input at frame 105.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/inspire/105/gt.glb"
-                    poster="./static/results/inspire/105/gt-poster.png"
+                    src="./static/results/inspire_sim/105/gt.glb"
+                    poster="./static/results/inspire_sim/105/gt-poster.png"
                     camera-target="-0.067875266m 0.379262954m -0.076351695m"
                     camera-orbit="55.513677deg 88.213051deg 0.665009720m"
                     field-of-view="28.014702deg"
@@ -269,7 +269,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/inspire/105/prediction.glb"
+                    src="./static/results/inspire_sim/105/prediction.glb"
                     camera-target="-0.067875266m 0.379262954m -0.076351695m"
                     camera-orbit="55.513677deg 88.213051deg 0.665009720m"
                     field-of-view="28.014702deg"
@@ -279,21 +279,21 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/inspire/105/prediction-2d.png"
+                    src="./static/results/inspire_sim/105/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="Inspire hand predicted 2D keypoints and skeleton at frame 105.">
                 </div>
                 <!-- Inspire 327 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/inspire/327/rgb.png"
+                    src="./static/results/inspire_sim/327/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="Inspire hand RGB input at frame 327.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/inspire/327/gt.glb"
-                    poster="./static/results/inspire/327/gt-poster.png"
+                    src="./static/results/inspire_sim/327/gt.glb"
+                    poster="./static/results/inspire_sim/327/gt-poster.png"
                     camera-target="0.126171947m 0.354141355m 0.063754275m"
                     camera-orbit="56.269551deg 83.847899deg 0.427912781m"
                     field-of-view="28.014702deg"
@@ -303,7 +303,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/inspire/327/prediction.glb"
+                    src="./static/results/inspire_sim/327/prediction.glb"
                     camera-target="0.126171947m 0.354141355m 0.063754275m"
                     camera-orbit="56.269551deg 83.847899deg 0.427912781m"
                     field-of-view="28.014702deg"
@@ -313,21 +313,21 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/inspire/327/prediction-2d.png"
+                    src="./static/results/inspire_sim/327/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="Inspire hand predicted 2D keypoints and skeleton at frame 327.">
                 </div>
                 <!-- Inspire 676 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/inspire/676/rgb.png"
+                    src="./static/results/inspire_sim/676/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="Inspire hand RGB input at frame 676.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/inspire/676/gt.glb"
-                    poster="./static/results/inspire/676/gt-poster.png"
+                    src="./static/results/inspire_sim/676/gt.glb"
+                    poster="./static/results/inspire_sim/676/gt-poster.png"
                     camera-target="0.102728471m 0.351770282m 0.037230663m"
                     camera-orbit="55.142816deg 84.011495deg 0.462285232m"
                     field-of-view="28.014702deg"
@@ -337,7 +337,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/inspire/676/prediction.glb"
+                    src="./static/results/inspire_sim/676/prediction.glb"
                     camera-target="0.102728471m 0.351770282m 0.037230663m"
                     camera-orbit="55.142816deg 84.011495deg 0.462285232m"
                     field-of-view="28.014702deg"
@@ -347,23 +347,27 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/inspire/676/prediction-2d.png"
+                    src="./static/results/inspire_sim/676/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="Inspire hand predicted 2D keypoints and skeleton at frame 676.">
                 </div>
 
                 <h3 class="result-hand-heading">XHand</h3>
+                <p class="result-column-caption">RGB</p>
+                <p class="result-column-caption">GT 3D</p>
+                <p class="result-column-caption">Predicted 3D</p>
+                <p class="result-column-caption">Predicted 2D</p>
                 <!-- Xhand 502 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/xhand/502/rgb.png"
+                    src="./static/results/xhand_sim/502/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="XHand RGB input at frame 502.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/xhand/502/gt.glb"
-                    poster="./static/results/xhand/502/gt-poster.png"
+                    src="./static/results/xhand_sim/502/gt.glb"
+                    poster="./static/results/xhand_sim/502/gt-poster.png"
                     camera-target="0.122326203m 0.384167224m -0.020716229m"
                     camera-orbit="48.118295deg 88.112379deg 0.480666331m"
                     field-of-view="28.014702deg"
@@ -373,7 +377,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/xhand/502/prediction.glb"
+                    src="./static/results/xhand_sim/502/prediction.glb"
                     camera-target="0.122326203m 0.384167224m -0.020716229m"
                     camera-orbit="48.118295deg 88.112379deg 0.480666331m"
                     field-of-view="28.014702deg"
@@ -383,21 +387,21 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/xhand/502/prediction-2d.png"
+                    src="./static/results/xhand_sim/502/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="XHand predicted 2D keypoints and skeleton at frame 502.">
                 </div>
                 <!-- Xhand 89 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/xhand/89/rgb.png"
+                    src="./static/results/xhand_sim/89/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="XHand RGB input at frame 89.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/xhand/89/gt.glb"
-                    poster="./static/results/xhand/89/gt-poster.png"
+                    src="./static/results/xhand_sim/89/gt.glb"
+                    poster="./static/results/xhand_sim/89/gt-poster.png"
                     camera-target="0.048369087m 0.320034534m -0.005619789m"
                     camera-orbit="54.699285deg 81.402049deg 0.534886132m"
                     field-of-view="28.014702deg"
@@ -407,7 +411,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/xhand/89/prediction.glb"
+                    src="./static/results/xhand_sim/89/prediction.glb"
                     camera-target="0.048369087m 0.320034534m -0.005619789m"
                     camera-orbit="54.699285deg 81.402049deg 0.534886132m"
                     field-of-view="28.014702deg"
@@ -417,21 +421,21 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/xhand/89/prediction-2d.png"
+                    src="./static/results/xhand_sim/89/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="XHand predicted 2D keypoints and skeleton at frame 89.">
                 </div>
                 <!-- Xhand 702 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/xhand/702/rgb.png"
+                    src="./static/results/xhand_sim/702/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="XHand RGB input at frame 702.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/xhand/702/gt.glb"
-                    poster="./static/results/xhand/702/gt-poster.png"
+                    src="./static/results/xhand_sim/702/gt.glb"
+                    poster="./static/results/xhand_sim/702/gt-poster.png"
                     camera-target="0.092751287m 0.420083761m -0.090686455m"
                     camera-orbit="44.746806deg 92.090942deg 0.550455112m"
                     field-of-view="28.014702deg"
@@ -441,7 +445,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/xhand/702/prediction.glb"
+                    src="./static/results/xhand_sim/702/prediction.glb"
                     camera-target="0.092751287m 0.420083761m -0.090686455m"
                     camera-orbit="44.746806deg 92.090942deg 0.550455112m"
                     field-of-view="28.014702deg"
@@ -451,23 +455,27 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/xhand/702/prediction-2d.png"
+                    src="./static/results/xhand_sim/702/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="XHand predicted 2D keypoints and skeleton at frame 702.">
                 </div>
 
                 <h3 class="result-hand-heading">LEAP Hand</h3>
+                <p class="result-column-caption">RGB</p>
+                <p class="result-column-caption">GT 3D</p>
+                <p class="result-column-caption">Predicted 3D</p>
+                <p class="result-column-caption">Predicted 2D</p>
                 <!-- LEAP 966 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/leap/966/rgb.png"
+                    src="./static/results/leap_sim/966/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="LEAP hand RGB input at frame 966.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/leap/966/gt.glb"
-                    poster="./static/results/leap/966/gt-poster.png"
+                    src="./static/results/leap_sim/966/gt.glb"
+                    poster="./static/results/leap_sim/966/gt-poster.png"
                     camera-target="0.122940019m 0.412056923m 0.068876512m"
                     camera-orbit="57.085178deg 91.623721deg 0.425505892m"
                     field-of-view="28.014702deg"
@@ -477,7 +485,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/leap/966/prediction.glb"
+                    src="./static/results/leap_sim/966/prediction.glb"
                     camera-target="0.122940019m 0.412056923m 0.068876512m"
                     camera-orbit="57.085178deg 91.623721deg 0.425505892m"
                     field-of-view="28.014702deg"
@@ -487,21 +495,21 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/leap/966/prediction-2d.png"
+                    src="./static/results/leap_sim/966/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="LEAP hand predicted 2D keypoints and skeleton at frame 966.">
                 </div>
                 <!-- LEAP 335 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/leap/335/rgb.png"
+                    src="./static/results/leap_sim/335/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="LEAP hand RGB input at frame 335.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/leap/335/gt.glb"
-                    poster="./static/results/leap/335/gt-poster.png"
+                    src="./static/results/leap_sim/335/gt.glb"
+                    poster="./static/results/leap_sim/335/gt-poster.png"
                     camera-target="0.030508807m 0.386748105m 0.095972084m"
                     camera-orbit="65.586292deg 88.462215deg 0.493806978m"
                     field-of-view="28.014702deg"
@@ -511,7 +519,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/leap/335/prediction.glb"
+                    src="./static/results/leap_sim/335/prediction.glb"
                     camera-target="0.030508807m 0.386748105m 0.095972084m"
                     camera-orbit="65.586292deg 88.462215deg 0.493806978m"
                     field-of-view="28.014702deg"
@@ -521,21 +529,21 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/leap/335/prediction-2d.png"
+                    src="./static/results/leap_sim/335/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="LEAP hand predicted 2D keypoints and skeleton at frame 335.">
                 </div>
                 <!-- LEAP 834 -->
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/leap/834/rgb.png"
+                    src="./static/results/leap_sim/834/rgb.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="LEAP hand RGB input at frame 834.">
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/leap/834/gt.glb"
-                    poster="./static/results/leap/834/gt-poster.png"
+                    src="./static/results/leap_sim/834/gt.glb"
+                    poster="./static/results/leap_sim/834/gt-poster.png"
                     camera-target="0.118973285m 0.347173423m 0.009205971m"
                     camera-orbit="51.149804deg 83.498911deg 0.466574864m"
                     field-of-view="28.014702deg"
@@ -545,7 +553,7 @@
                 </div>
                 <div class="result-card">
                   <model-viewer class="result-media result-media-model"
-                    src="./static/results/leap/834/prediction.glb"
+                    src="./static/results/leap_sim/834/prediction.glb"
                     camera-target="0.118973285m 0.347173423m 0.009205971m"
                     camera-orbit="51.149804deg 83.498911deg 0.466574864m"
                     field-of-view="28.014702deg"
@@ -555,14 +563,14 @@
                 </div>
                 <div class="result-card">
                   <img class="result-media result-media-image"
-                    src="./static/results/leap/834/prediction-2d.png"
+                    src="./static/results/leap_sim/834/prediction-2d.png"
                     width="480" height="480" loading="lazy" decoding="async"
                     alt="LEAP hand predicted 2D keypoints and skeleton at frame 834.">
                 </div>
               </div>
             </div>
 
-            <!-- Real-world results template. Duplicate each four-card row as needed. -->
+            <!-- Real-world results. Each row contains RGB, GT 3D, predicted 3D, and predicted 2D. -->
             <div class="real-results-template">
               <h2 class="title is-3">Real Results</h2>
               <div class="result-overview-video-grid result-overview-video-grid-two">
@@ -589,81 +597,299 @@
                   <p class="result-column-caption">Predicted 3D</p>
                   <p class="result-column-caption">Predicted 2D</p>
 
+                  <!-- Inspire real frame 0 -->
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>RGB</strong>
-                      <span>Add a real RGB image.</span>
-                    </div>
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/inspire_real/0/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="Inspire Hand real RGB result at frame 0.">
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>GT 3D</strong>
-                      <span>Add a ground-truth 3D model.</span>
-                    </div>
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/inspire_real/0/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive Inspire Hand ground-truth 3D model for real frame 0.">
+                    </model-viewer>
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>Predicted 3D</strong>
-                      <span>Add a predicted 3D model.</span>
-                    </div>
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/inspire_real/0/prediction.glb"
+                      poster="./static/results/inspire_real/0/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive Inspire Hand predicted 3D model for real frame 0.">
+                    </model-viewer>
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>Predicted 2D</strong>
-                      <span>Add a keypoint and skeleton image.</span>
-                    </div>
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/inspire_real/0/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="Inspire Hand predicted 2D keypoints and skeleton for real frame 0.">
+                  </div>
+
+                  <!-- Inspire real frame 42 -->
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/inspire_real/42/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="Inspire Hand real RGB result at frame 42.">
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/inspire_real/42/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive Inspire Hand ground-truth 3D model for real frame 42.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/inspire_real/42/prediction.glb"
+                      poster="./static/results/inspire_real/42/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive Inspire Hand predicted 3D model for real frame 42.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/inspire_real/42/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="Inspire Hand predicted 2D keypoints and skeleton for real frame 42.">
+                  </div>
+
+                  <!-- Inspire real frame 50 -->
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/inspire_real/50/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="Inspire Hand real RGB result at frame 50.">
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/inspire_real/50/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive Inspire Hand ground-truth 3D model for real frame 50.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/inspire_real/50/prediction.glb"
+                      poster="./static/results/inspire_real/50/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive Inspire Hand predicted 3D model for real frame 50.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/inspire_real/50/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="Inspire Hand predicted 2D keypoints and skeleton for real frame 50.">
+                  </div>
+
+                  <!-- Inspire real frame 58 -->
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/inspire_real/58/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="Inspire Hand real RGB result at frame 58.">
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/inspire_real/58/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive Inspire Hand ground-truth 3D model for real frame 58.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/inspire_real/58/prediction.glb"
+                      poster="./static/results/inspire_real/58/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive Inspire Hand predicted 3D model for real frame 58.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/inspire_real/58/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="Inspire Hand predicted 2D keypoints and skeleton for real frame 58.">
                   </div>
 
                   <h3 class="result-hand-heading">XHand</h3>
+                  <p class="result-column-caption">RGB</p>
+                  <p class="result-column-caption">GT 3D</p>
+                  <p class="result-column-caption">Predicted 3D</p>
+                  <p class="result-column-caption">Predicted 2D</p>
+                  <!-- XHand real frame 1 -->
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>RGB</strong>
-                      <span>Add a real RGB image.</span>
-                    </div>
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/1/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand real RGB result at frame 1.">
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>GT 3D</strong>
-                      <span>Add a ground-truth 3D model.</span>
-                    </div>
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/1/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand ground-truth 3D model for real frame 1.">
+                    </model-viewer>
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>Predicted 3D</strong>
-                      <span>Add a predicted 3D model.</span>
-                    </div>
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/1/prediction.glb"
+                      poster="./static/results/xhand_real/1/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand predicted 3D model for real frame 1.">
+                    </model-viewer>
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>Predicted 2D</strong>
-                      <span>Add a keypoint and skeleton image.</span>
-                    </div>
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/1/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand predicted 2D keypoints and skeleton for real frame 1.">
                   </div>
 
-                  <h3 class="result-hand-heading">LEAP Hand</h3>
+                  <!-- XHand real frame 2 -->
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>RGB</strong>
-                      <span>Add a real RGB image.</span>
-                    </div>
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/2/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand real RGB result at frame 2.">
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>GT 3D</strong>
-                      <span>Add a ground-truth 3D model.</span>
-                    </div>
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/2/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand ground-truth 3D model for real frame 2.">
+                    </model-viewer>
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>Predicted 3D</strong>
-                      <span>Add a predicted 3D model.</span>
-                    </div>
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/2/prediction.glb"
+                      poster="./static/results/xhand_real/2/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand predicted 3D model for real frame 2.">
+                    </model-viewer>
                   </div>
                   <div class="result-card">
-                    <div class="media-placeholder media-placeholder-small">
-                      <strong>Predicted 2D</strong>
-                      <span>Add a keypoint and skeleton image.</span>
-                    </div>
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/2/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand predicted 2D keypoints and skeleton for real frame 2.">
+                  </div>
+
+                  <!-- XHand real frame 7 -->
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/7/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand real RGB result at frame 7.">
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/7/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand ground-truth 3D model for real frame 7.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/7/prediction.glb"
+                      poster="./static/results/xhand_real/7/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand predicted 3D model for real frame 7.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/7/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand predicted 2D keypoints and skeleton for real frame 7.">
+                  </div>
+
+                  <!-- XHand real frame 15 -->
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/15/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand real RGB result at frame 15.">
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/15/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand ground-truth 3D model for real frame 15.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/15/prediction.glb"
+                      poster="./static/results/xhand_real/15/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand predicted 3D model for real frame 15.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/15/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand predicted 2D keypoints and skeleton for real frame 15.">
+                  </div>
+
+                  <!-- XHand real frame 26 -->
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/26/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand real RGB result at frame 26.">
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/26/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand ground-truth 3D model for real frame 26.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/26/prediction.glb"
+                      poster="./static/results/xhand_real/26/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand predicted 3D model for real frame 26.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/26/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand predicted 2D keypoints and skeleton for real frame 26.">
+                  </div>
+
+                  <!-- XHand real frame 34 -->
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/34/rgb.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand real RGB result at frame 34.">
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/34/gt.glb"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand ground-truth 3D model for real frame 34.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <model-viewer class="result-media result-media-model result-media-wide"
+                      src="./static/results/xhand_real/34/prediction.glb"
+                      poster="./static/results/xhand_real/34/prediction-poster.png"
+                      camera-controls touch-action="pan-y" loading="lazy"
+                      alt="Interactive XHand predicted 3D model for real frame 34.">
+                    </model-viewer>
+                  </div>
+                  <div class="result-card">
+                    <img class="result-media result-media-image result-media-wide"
+                      src="./static/results/xhand_real/34/prediction-2d.png"
+                      width="1280" height="720" loading="lazy" decoding="async"
+                      alt="XHand predicted 2D keypoints and skeleton for real frame 34.">
                   </div>
                 </div>
               </div>
@@ -686,7 +912,7 @@
                   <figcaption class="result-video-label">C</figcaption>
                   <video class="result-video" controls muted loop playsinline preload="metadata"
                     aria-label="Supplementary object-C occlusion video">
-                    <!-- <source src="./static/videos/occlusion-c.mp4" type="video/mp4"> -->
+                    <source src="./static/videos/occlusion/C/xhand_C_large_fixed_960x540_whitebg_15fps.mp4" type="video/mp4">
                   </video>
                 </figure>
 
@@ -694,7 +920,7 @@
                   <figcaption class="result-video-label">R</figcaption>
                   <video class="result-video" controls muted loop playsinline preload="metadata"
                     aria-label="Supplementary object-R occlusion video">
-                    <!-- <source src="./static/videos/occlusion-r.mp4" type="video/mp4"> -->
+                    <source src="./static/videos/occlusion/R/xhand_R_large_fixed_960x540_whitebg_15fps.mp4" type="video/mp4">
                   </video>
                 </figure>
 
@@ -702,7 +928,7 @@
                   <figcaption class="result-video-label">A</figcaption>
                   <video class="result-video" controls muted loop playsinline preload="metadata"
                     aria-label="Supplementary object-A occlusion video">
-                    <!-- <source src="./static/videos/occlusion-a.mp4" type="video/mp4"> -->
+                    <source src="./static/videos/occlusion/A/xhand_A_large_fixed_960x540_whitebg_15fps.mp4" type="video/mp4">
                   </video>
                 </figure>
               </div>
@@ -714,7 +940,7 @@
     </section>
 
     <!-- Citation. -->
-    <section class="section" id="BibTeX">
+    <!-- <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <h2 class="title is-3">BibTeX</h2>
         <pre><code>@inproceedings{project-key,
@@ -724,7 +950,7 @@
   year      = {[Year]}
 }</code></pre>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <footer class="footer">

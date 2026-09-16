@@ -412,6 +412,11 @@ a {
   --poster-color: transparent;
 }
 
+.result-media-wide {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+}
+
 .result-overview-video-grid {
   display: grid;
   gap: 1rem;
