@@ -159,6 +159,7 @@ a {
 }
 
 .hero-background-media {
+  display: block;
   filter: saturate(0.8) contrast(1.08);
   height: 100%;
   object-fit: cover;
@@ -262,6 +263,12 @@ a {
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
+}
+
+.teaser-video {
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 .teaser-caption {
@@ -477,6 +484,18 @@ a {
 .result-video-caption {
   color: var(--muted-color);
   margin: 1rem auto 0;
+}
+
+.real-results-template .result-video {
+  aspect-ratio: 1 / 1;
+}
+
+#bench2dex-results {
+  scroll-margin-top: 5rem;
+}
+
+#bench2dex-results .result-video {
+  aspect-ratio: 4 / 3;
 }
 
 .results-carousel {

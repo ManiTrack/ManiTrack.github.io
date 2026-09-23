@@ -9,3 +9,8 @@ __pycache__/
 /static/videos/inspire/inspire_sim_prediction_white_skeleton_15fps_upright.mp4
 /static/videos/xhand/xhand_sim_prediction_white_skeleton_15fps_upright.mp4
 /static/videos/leap/leaphand_sim_prediction_white_skeleton_15fps.mp4
+
+# Keep original real/occlusion clips locally; the page uses H.264 copies.
+/static/videos/real/inspire.mp4
+/static/videos/real/xhand4.mp4
+/static/videos/occlusion/I/I.mp4

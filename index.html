@@ -18,7 +18,7 @@
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css?v=20260916-1">
+  <link rel="stylesheet" href="./static/css/index.css?v=20260923-3">
 
   <!-- MathJax: supports $...$, \(...\), $$...$$, and \[...\]. -->
   <script>
@@ -44,7 +44,7 @@
     type="module"
     src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script defer src="./static/js/index.js?v=20260825-4"></script>
+  <script defer src="./static/js/index.js?v=20260923-1"></script>
 </head>
 <body>
   <header class="collapsed-project-header" data-collapsed-header aria-hidden="true">
@@ -58,17 +58,17 @@
   </header>
 
   <main>
-    <!-- Full-screen project cover. Replace the background image when a dedicated asset is ready. -->
+    <!-- Full-screen project cover. -->
     <section id="project-cover" class="hero publication-header hero-cover" data-hero>
       <div class="hero-sticky" data-hero-sticky>
         <div class="hero-background" aria-hidden="true">
-          <img
+          <video
             class="hero-background-media"
             data-hero-media
-            src="./static/images/pipeline.png"
-            decoding="async"
-            fetchpriority="high"
-            alt="">
+            autoplay muted loop playsinline preload="metadata"
+            poster="./static/images/hero-video-poster.jpg">
+            <source src="./static/videos/Teaser.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -120,12 +120,12 @@
                     <span>arXiv(Coming Soon)</span>
                   </a>
                 </span>
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="#" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-youtube"></i></span>
                     <span>Video(Coming Soon)</span>
                   </a>
-                </span>
+                </span> -->
                 <span class="link-block">
                   <a href="#" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-github"></i></span>
@@ -146,16 +146,16 @@
       </div>
     </section>
 
-    <!-- Teaser: replace this placeholder with an img or video element. -->
+    <!-- Teaser video. -->
     <section class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <div class="media-placeholder media-placeholder-large">
-            <strong>Teaser image or video</strong>
-            <span>Add media under <code>static/images</code> or <code>static/videos</code>.</span>
-          </div>
+          <video class="teaser-video" controls playsinline preload="metadata" aria-label="ManiTrack teaser video">
+            <source src="./static/videos/ManiTrack_compressed.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <h2 class="subtitle has-text-centered teaser-caption">
-            [A short caption explaining the main idea or result.]
+            From a single RGB-D view, ManiTrack predicts hand keypoints, screens unreliable depth observations using estimated visibility, and refines the 3D hand state with URDF constraints. The video also shows simulated and real tracking, cross-hand motion retargeting, and robot-robot interaction.
           </h2>
         </div>
       </div>
@@ -168,18 +168,24 @@
           <div class="column is-four-fifths">
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
-              <p>As robots are increasingly deployed in human-centered environments, ranging from collaborative manufacturing to security surveillance, 
-                the ability to perceive and interpret motions of other robots is becoming essential. In particular, accurate perception of robotic hand 
-                poses and motions is critical for multi-robot interaction and coordination. While human hand pose estimation has reached a relatively 
-                mature stage, vision-based 3D pose estimation for robotic hands remains largely underexplored, limiting both the understanding of robot 
-                behavior and cross-platform skill transfer among heterogeneous robotic systems. We identify three key challenges underlying this problem: 
-                (1) the structural diversity of robotic end effectors; (2) the scarcity of annotated 3D pose data for robotic hands; and (3) severe 
-                occlusions and weak visual textures inherent to mechanical structures. To address these challenges, we propose $\textbf{ManiTrack}$, a 
-                unified RGB-D estimation pipeline for real-time 3D robotic hand pose estimation. ManiTrack incorporates hand-specific kinematic priors 
-                to recover kinematically consistent hand states from unreliable visual observations. Extensive experiments show that the online variant 
-                of ManiTrack achieves an average AUC@50 of $\textbf{79.89\%}$ across three dexterous hands on a synthetic dataset at $\textbf{19.73 FPS}$, 
-                while generalizing to real-world observations without fine-tuning. Finally, we demonstrate its practical utility through a robot motion 
-                imitation task.</p>
+              <p>As robots are increasingly deployed in human-centered environments, ranging from collaborative 
+                manufacturing to security surveillance, the ability to perceive and interpret motions of other 
+                robots is becoming essential. In particular, accurate perception of robotic hand poses and 
+                motions is critical for multi-robot interaction and coordination. While human hand pose 
+                estimation has reached a relatively mature stage, vision-based 3D pose estimation for robotic 
+                hands remains largely underexplored, limiting both the understanding of robot behavior and 
+                cross-platform skill transfer among heterogeneous robotic systems. We identify three key 
+                challenges underlying this problem: (1) the scarcity of annotated 3D pose data for robotic hands; 
+                (2) severe occlusions and weak visual textures inherent to mechanical structures; and (3) the 
+                difficulty of recovering kinematically consistent 3D states from visual observations. To address 
+                these challenges, we propose ManiTrack, a unified RGB-D estimation pipeline for 
+                real-time 3D robotic hand pose estimation. ManiTrack incorporates hand-specific kinematic priors 
+                to recover kinematically consistent hand states from unreliable visual observations. Extensive 
+                experiments show that the online variant of ManiTrack achieves an average AUC@50 of 79.89% 
+                across three dexterous hands on a synthetic dataset at 19.73 FPS, while generalizing 
+                to real-world observations without fine-tuning. Finally, we demonstrate its practical utility 
+                through cross-embodiment motion retargeting and robot--robot interaction. Project webpage: 
+                https://manitrack.github.io/</p>
             </div>
           </div>
         </div>
@@ -202,12 +208,36 @@
                   decoding="async"
                   alt="Overview of the ManiTrack pipeline.">
                 <figcaption class="figure-caption">
-                  <p><strong>System Overview.</strong> The proposed framework consists of three components: synthetic RGB-D data generation with 
-                  geometry-consistent annotations, visibility-aware single-frame keypoint estimation, and URDF-guided kinematic completion for 
-                  physically consistent 3D hand pose estimation.</p>
+                  <p><strong>System Overview.</strong> Synthetic RGB-D data train the 2D keypoint and visibility estimator. At inference, the visibility head selects reliable depth anchors; learned base-position correction and URDF-constrained fitting then recover the hand's root pose and joint angles.</p>
                 </figcaption>
               </figure>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quantitative metrics. -->
+    <section class="section" id="quantitative-metrics" aria-labelledby="quantitative-metrics-title">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3" id="quantitative-metrics-title">Quantitative Metrics</h2>
+            <figure class="publication-figure">
+              <a href="./static/images/result_table.jpg" target="_blank" rel="noopener noreferrer"
+                aria-label="View the full-resolution quantitative metrics table">
+                <img
+                  src="./static/images/result_table.jpg"
+                  width="2509"
+                  height="694"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Quantitative comparison on synthetic and real test sets for Inspire Hand, XHand, and LEAP Hand, reporting mean 3D keypoint error and ADD-AUC metrics.">
+              </a>
+              <figcaption class="figure-caption">
+                <p>Synthetic results cover Inspire Hand, XHand, and LEAP Hand; real-test AUC@50 is shown for Inspire Hand and XHand. Mean is 3D keypoint error in millimeters (lower is better), while AUC@20 and AUC@50 are ADD-AUC at 20 mm and 50 mm (higher is better).</p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
@@ -569,23 +599,24 @@
                 </div>
               </div>
             </div>
+            <p class="result-template-caption">Synthetic examples across Inspire Hand, XHand, and LEAP Hand show tracking with different hand geometries and joint structures. Each row pairs the RGB input with interactive ground-truth and predicted 3D hands and the predicted 2D keypoint skeleton.</p>
 
             <!-- Real-world results. Each row contains RGB, GT 3D, predicted 3D, and predicted 2D. -->
             <div class="real-results-template">
               <h2 class="title is-3">Real Results</h2>
               <div class="result-overview-video-grid result-overview-video-grid-two">
                 <figure class="result-video-card">
-                  <figcaption class="result-video-label">[Real video 1]</figcaption>
+                  <figcaption class="result-video-label">Inspire Hand</figcaption>
                   <video class="result-video" controls muted loop playsinline preload="metadata"
-                    aria-label="Real-world result video 1">
-                    <!-- <source src="./static/videos/real-result-1.mp4" type="video/mp4"> -->
+                    aria-label="Inspire Hand real-world tracking results">
+                    <source src="./static/videos/real/inspire_h264.mp4" type="video/mp4">
                   </video>
                 </figure>
                 <figure class="result-video-card">
-                  <figcaption class="result-video-label">[Real video 2]</figcaption>
+                  <figcaption class="result-video-label">XHand</figcaption>
                   <video class="result-video" controls muted loop playsinline preload="metadata"
-                    aria-label="Real-world result video 2">
-                    <!-- <source src="./static/videos/real-result-2.mp4" type="video/mp4"> -->
+                    aria-label="XHand real-world tracking results">
+                    <source src="./static/videos/real/xhand4_h264.mp4" type="video/mp4">
                   </video>
                 </figure>
               </div>
@@ -599,20 +630,20 @@
 
                   <!-- Inspire real frame 0 -->
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/inspire_real/0/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/inspire_real/0/rgb-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="Inspire Hand real RGB result at frame 0.">
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/inspire_real/0/gt.glb"
                       camera-controls touch-action="pan-y" loading="lazy"
                       alt="Interactive Inspire Hand ground-truth 3D model for real frame 0.">
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/inspire_real/0/prediction.glb"
                       poster="./static/results/inspire_real/0/prediction-poster.png"
                       camera-controls touch-action="pan-y" loading="lazy"
@@ -620,57 +651,28 @@
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/inspire_real/0/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/inspire_real/0/prediction-2d-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="Inspire Hand predicted 2D keypoints and skeleton for real frame 0.">
-                  </div>
-
-                  <!-- Inspire real frame 42 -->
-                  <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/inspire_real/42/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
-                      alt="Inspire Hand real RGB result at frame 42.">
-                  </div>
-                  <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
-                      src="./static/results/inspire_real/42/gt.glb"
-                      camera-controls touch-action="pan-y" loading="lazy"
-                      alt="Interactive Inspire Hand ground-truth 3D model for real frame 42.">
-                    </model-viewer>
-                  </div>
-                  <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
-                      src="./static/results/inspire_real/42/prediction.glb"
-                      poster="./static/results/inspire_real/42/prediction-poster.png"
-                      camera-controls touch-action="pan-y" loading="lazy"
-                      alt="Interactive Inspire Hand predicted 3D model for real frame 42.">
-                    </model-viewer>
-                  </div>
-                  <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/inspire_real/42/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
-                      alt="Inspire Hand predicted 2D keypoints and skeleton for real frame 42.">
                   </div>
 
                   <!-- Inspire real frame 50 -->
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/inspire_real/50/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/inspire_real/50/rgb-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="Inspire Hand real RGB result at frame 50.">
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/inspire_real/50/gt.glb"
                       camera-controls touch-action="pan-y" loading="lazy"
                       alt="Interactive Inspire Hand ground-truth 3D model for real frame 50.">
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/inspire_real/50/prediction.glb"
                       poster="./static/results/inspire_real/50/prediction-poster.png"
                       camera-controls touch-action="pan-y" loading="lazy"
@@ -678,28 +680,28 @@
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/inspire_real/50/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/inspire_real/50/prediction-2d-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="Inspire Hand predicted 2D keypoints and skeleton for real frame 50.">
                   </div>
 
                   <!-- Inspire real frame 58 -->
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/inspire_real/58/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/inspire_real/58/rgb-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="Inspire Hand real RGB result at frame 58.">
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/inspire_real/58/gt.glb"
                       camera-controls touch-action="pan-y" loading="lazy"
                       alt="Interactive Inspire Hand ground-truth 3D model for real frame 58.">
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/inspire_real/58/prediction.glb"
                       poster="./static/results/inspire_real/58/prediction-poster.png"
                       camera-controls touch-action="pan-y" loading="lazy"
@@ -707,9 +709,9 @@
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/inspire_real/58/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/inspire_real/58/prediction-2d-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="Inspire Hand predicted 2D keypoints and skeleton for real frame 58.">
                   </div>
 
@@ -720,20 +722,20 @@
                   <p class="result-column-caption">Predicted 2D</p>
                   <!-- XHand real frame 1 -->
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/1/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/xhand_real/1/rgb-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="XHand real RGB result at frame 1.">
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/xhand_real/1/gt.glb"
                       camera-controls touch-action="pan-y" loading="lazy"
                       alt="Interactive XHand ground-truth 3D model for real frame 1.">
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/xhand_real/1/prediction.glb"
                       poster="./static/results/xhand_real/1/prediction-poster.png"
                       camera-controls touch-action="pan-y" loading="lazy"
@@ -741,57 +743,28 @@
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/1/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/xhand_real/1/prediction-2d-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="XHand predicted 2D keypoints and skeleton for real frame 1.">
-                  </div>
-
-                  <!-- XHand real frame 2 -->
-                  <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/2/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
-                      alt="XHand real RGB result at frame 2.">
-                  </div>
-                  <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
-                      src="./static/results/xhand_real/2/gt.glb"
-                      camera-controls touch-action="pan-y" loading="lazy"
-                      alt="Interactive XHand ground-truth 3D model for real frame 2.">
-                    </model-viewer>
-                  </div>
-                  <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
-                      src="./static/results/xhand_real/2/prediction.glb"
-                      poster="./static/results/xhand_real/2/prediction-poster.png"
-                      camera-controls touch-action="pan-y" loading="lazy"
-                      alt="Interactive XHand predicted 3D model for real frame 2.">
-                    </model-viewer>
-                  </div>
-                  <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/2/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
-                      alt="XHand predicted 2D keypoints and skeleton for real frame 2.">
                   </div>
 
                   <!-- XHand real frame 7 -->
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/7/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/xhand_real/7/rgb-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="XHand real RGB result at frame 7.">
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/xhand_real/7/gt.glb"
                       camera-controls touch-action="pan-y" loading="lazy"
                       alt="Interactive XHand ground-truth 3D model for real frame 7.">
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/xhand_real/7/prediction.glb"
                       poster="./static/results/xhand_real/7/prediction-poster.png"
                       camera-controls touch-action="pan-y" loading="lazy"
@@ -799,57 +772,28 @@
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/7/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/xhand_real/7/prediction-2d-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="XHand predicted 2D keypoints and skeleton for real frame 7.">
-                  </div>
-
-                  <!-- XHand real frame 15 -->
-                  <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/15/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
-                      alt="XHand real RGB result at frame 15.">
-                  </div>
-                  <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
-                      src="./static/results/xhand_real/15/gt.glb"
-                      camera-controls touch-action="pan-y" loading="lazy"
-                      alt="Interactive XHand ground-truth 3D model for real frame 15.">
-                    </model-viewer>
-                  </div>
-                  <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
-                      src="./static/results/xhand_real/15/prediction.glb"
-                      poster="./static/results/xhand_real/15/prediction-poster.png"
-                      camera-controls touch-action="pan-y" loading="lazy"
-                      alt="Interactive XHand predicted 3D model for real frame 15.">
-                    </model-viewer>
-                  </div>
-                  <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/15/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
-                      alt="XHand predicted 2D keypoints and skeleton for real frame 15.">
                   </div>
 
                   <!-- XHand real frame 26 -->
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/26/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/xhand_real/26/rgb-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="XHand real RGB result at frame 26.">
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/xhand_real/26/gt.glb"
                       camera-controls touch-action="pan-y" loading="lazy"
                       alt="Interactive XHand ground-truth 3D model for real frame 26.">
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
+                    <model-viewer class="result-media result-media-model"
                       src="./static/results/xhand_real/26/prediction.glb"
                       poster="./static/results/xhand_real/26/prediction-poster.png"
                       camera-controls touch-action="pan-y" loading="lazy"
@@ -857,46 +801,17 @@
                     </model-viewer>
                   </div>
                   <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/26/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
+                    <img class="result-media result-media-image"
+                      src="./static/results/xhand_real/26/prediction-2d-480.png"
+                      width="480" height="480" loading="lazy" decoding="async"
                       alt="XHand predicted 2D keypoints and skeleton for real frame 26.">
-                  </div>
-
-                  <!-- XHand real frame 34 -->
-                  <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/34/rgb.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
-                      alt="XHand real RGB result at frame 34.">
-                  </div>
-                  <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
-                      src="./static/results/xhand_real/34/gt.glb"
-                      camera-controls touch-action="pan-y" loading="lazy"
-                      alt="Interactive XHand ground-truth 3D model for real frame 34.">
-                    </model-viewer>
-                  </div>
-                  <div class="result-card">
-                    <model-viewer class="result-media result-media-model result-media-wide"
-                      src="./static/results/xhand_real/34/prediction.glb"
-                      poster="./static/results/xhand_real/34/prediction-poster.png"
-                      camera-controls touch-action="pan-y" loading="lazy"
-                      alt="Interactive XHand predicted 3D model for real frame 34.">
-                    </model-viewer>
-                  </div>
-                  <div class="result-card">
-                    <img class="result-media result-media-image result-media-wide"
-                      src="./static/results/xhand_real/34/prediction-2d.png"
-                      width="1280" height="720" loading="lazy" decoding="async"
-                      alt="XHand predicted 2D keypoints and skeleton for real frame 34.">
                   </div>
                 </div>
               </div>
-              <p class="result-template-caption">[Real-results caption.]</p>
+              <p class="result-template-caption">Captured Inspire Hand and XHand sequences show how the model trained on synthetic RGB-D data transfers to real observations without real-data fine-tuning. Each row pairs an RGB frame with reference and predicted 3D hand states and the predicted 2D keypoint skeleton.</p>
             </div>
 
-            <!-- Supplementary occlusion videos. Add one MP4 source to each video. -->
+            <!-- Supplementary occlusion videos for objects I, C, R, and A. -->
             <div class="result-video-supplement">
               <h3 class="title is-4">Robustness under Object Occlusion</h3>
               <div class="result-video-grid">
@@ -904,7 +819,7 @@
                   <figcaption class="result-video-label">I</figcaption>
                   <video class="result-video" controls muted loop playsinline preload="metadata"
                     aria-label="Supplementary object-I occlusion video">
-                    <!-- <source src="./static/videos/occlusion-i.mp4" type="video/mp4"> -->
+                    <source src="./static/videos/occlusion/I/I_h264.mp4?v=20260923-trim1" type="video/mp4">
                   </video>
                 </figure>
 
@@ -932,8 +847,30 @@
                   </video>
                 </figure>
               </div>
-              <p class="result-video-caption">[Supplementary video caption.]</p>
+              <p class="result-video-caption">Objects arranged as I, C, R, and A partially hide the hand during grasping. The videos show tracked keypoints and skeletal links in real and simulated occlusion scenes.</p>
             </div>
+
+            <!-- Bench2Dex sequence results. -->
+            <section class="result-video-supplement" id="bench2dex-results" aria-labelledby="bench2dex-title">
+              <h3 class="title is-4" id="bench2dex-title">Bench2Dex Results</h3>
+              <div class="result-video-grid">
+                <figure class="result-video-card">
+                  <figcaption class="result-video-label">Sequence 263</figcaption>
+                  <video class="result-video" controls muted loop playsinline preload="metadata"
+                    aria-label="Bench2Dex sequence 263 tracking results">
+                    <source src="./static/videos/bench2dex/id263_stage4_filtered_f693-885_9p65s.mp4" type="video/mp4">
+                  </video>
+                </figure>
+                <figure class="result-video-card">
+                  <figcaption class="result-video-label">Sequence 280</figcaption>
+                  <video class="result-video" controls muted loop playsinline preload="metadata"
+                    aria-label="Bench2Dex sequence 280 tracking results">
+                    <source src="./static/videos/bench2dex/id280_stage4_filtered_f020-219_10s.mp4" type="video/mp4">
+                  </video>
+                </figure>
+              </div>
+              <p class="result-video-caption">Two Bench2Dex sequences show hand-state estimates in scenes with two interacting hands. Colored keypoints and skeletal links make the tracked configurations visible frame by frame.</p>
+            </section>
           </div>
         </div>
       </div>

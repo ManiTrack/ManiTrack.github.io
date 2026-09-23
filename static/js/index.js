@@ -40,6 +40,15 @@
       ? 'scale(1.06)'
       : `translate3d(0, ${(30 * progress).toFixed(2)}px, 0) scale(${(1.06 + 0.08 * progress).toFixed(4)})`;
 
+    if (media instanceof HTMLVideoElement) {
+      const shouldPlay = !hasReducedMotion && !document.hidden && hero.getBoundingClientRect().bottom > 0;
+      if (shouldPlay && media.paused) {
+        media.play().catch(() => {});
+      } else if (!shouldPlay && !media.paused) {
+        media.pause();
+      }
+    }
+
     collapsedHeader.style.opacity = headerProgress.toFixed(3);
     collapsedHeader.style.transform = `translate3d(0, ${(-100 * (1 - headerProgress)).toFixed(2)}%, 0)`;
     collapsedHeader.style.visibility = headerProgress > 0 ? 'visible' : 'hidden';
@@ -56,6 +65,7 @@
 
   window.addEventListener('scroll', scheduleRender, {passive: true});
   window.addEventListener('resize', scheduleRender);
+  document.addEventListener('visibilitychange', scheduleRender);
   reducedMotion.addEventListener('change', scheduleRender);
   render();
 })();
